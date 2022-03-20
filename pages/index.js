@@ -1,5 +1,6 @@
+import CustomCursor from 'custom-cursor-react';
+import 'custom-cursor-react/dist/index.css';
 import Head from "next/head";
-import Image from "next/image";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
@@ -23,6 +24,18 @@ export default function Home() {
       </Head>
 
       <main>
+        <CustomCursor
+            targets={['.nav__right', '.nav__left']}
+            customClass='custom-cursor'
+            dimensions={90}
+            fill='#FFF'
+            smoothness={{
+              movement: 0.2,
+              scale: 0.1,
+              opacity: 0.2,
+            }}
+            targetOpacity={0.4}
+        />
         <Landing></Landing>
         <About></About>
         <Services></Services>
