@@ -1,8 +1,9 @@
-import Link from "next/link";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Image from "next/image";
-import white_logo from "../../assets/images/white_logo.svg";
+import Link from "next/link";
 import { useRef, useState } from "react";
+import blue_logo from "../../assets/images/blue_logo.svg";
+import white_logo from "../../assets/images/white_logo.svg";
 const Nav = () => {
   const [top, setTop] = useState(true);
   const hamburgerRef = useRef();
@@ -36,7 +37,12 @@ const Nav = () => {
                 height={50}
               />
             ) : (
-              <h2>SkyLink Creative</h2>
+              <Image
+                src={blue_logo}
+                alt="SkyLink Creative"
+                width={150}
+                height={50}
+              />
             )}
           </Link>
         </div>
