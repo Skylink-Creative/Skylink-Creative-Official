@@ -1,7 +1,7 @@
 .contact {
   padding: 100px 0px;
   @include max-width;
-  @include breakpoints-down(medium) {
+  @include breakpoints-down(small) {
     padding: 50px 0px;
   }
   display: grid;
@@ -17,8 +17,9 @@
         &:nth-of-type(1) {
           font-size: 18px;
           letter-spacing: 5px;
+          margin-bottom: 10px;
         }
-        &:nth-of-type(2) {
+        a {
           color: #d8d8d8;
           font-size: 24px;
           cursor: pointer;
@@ -54,6 +55,10 @@
           font-size: 60px;
           font-weight: 900;
           color: #286dec;
+          @include breakpoints-down(small) {
+            font-size: 38px;
+            line-height: 150%;
+          }
         }
       }
     }

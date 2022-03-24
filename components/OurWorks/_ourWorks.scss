@@ -20,6 +20,9 @@
         }
         &:nth-of-type(2) {
           font-size: 60px;
+          @include breakpoints-down(small) {
+            font-size: 38px;
+          }
           font-weight: 900;
           color: #286dec;
           margin-bottom: 50px;

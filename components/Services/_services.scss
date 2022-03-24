@@ -1,6 +1,9 @@
 .services {
   background-color: #f9fbfe;
   padding: 150px 0px;
+  @include breakpoints-down(small) {
+    padding: 70px 0px;
+  }
   > div {
     @include max-width;
   }
@@ -17,6 +20,10 @@
         font-weight: 900;
         color: #286dec;
         margin-bottom: 50px;
+        @include breakpoints-down(small) {
+          font-size: 28px;
+          line-height: 150%;
+        }
       }
     }
   }

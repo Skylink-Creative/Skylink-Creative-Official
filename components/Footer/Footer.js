@@ -35,7 +35,6 @@ const Footer = () => {
               <AiFillTwitterSquare size={25} />
             </a>{" "}
           </li>
-          <li>Copyright © skylink creative 2022</li>
         </ul>
       </div>
       <div className="footer_item">
@@ -82,6 +81,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <small style={{ textAlign: "center" }}>
+        Copyright © skylink creative 2022
+      </small>
     </div>
   );
 };

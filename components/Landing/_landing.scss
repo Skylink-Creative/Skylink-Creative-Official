@@ -1,9 +1,5 @@
 .hero {
-  // height: 100%;
-  // min-height: 100vh;
-  // max-height: 100%;
   position: relative;
-  // box-shadow: 0 12px 21px #7889b6;
   #tsparticles {
     position: absolute;
     top: 0%;
@@ -12,14 +8,6 @@
     right: 0%;
     width: 100%;
     background: linear-gradient(to bottom, #0051f9, #286dec);
-    // background-image: radial-gradient(
-    //   circle 920px at center,
-    //   #286dec 0,
-    //   #286dec 24%,
-    //   #2767e7 32%,
-    //   #244dd2 66%,
-    //   #244dd2 91%
-    // );
 
     z-index: -999;
   }
@@ -38,11 +26,7 @@
     }
     padding: 200px 0px;
     overflow-x: hidden;
-    // @include breakpoints-up(medium) {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    // }
+
     @include max-width;
     > div:nth-of-type(1) {
       @include breakpoints-down(small) {
@@ -66,7 +50,7 @@
         max-width: 800px;
         color: $white;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.7em;
         word-spacing: 1px;
         // text-align: justify;

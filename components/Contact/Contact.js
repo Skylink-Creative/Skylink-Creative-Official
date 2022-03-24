@@ -20,15 +20,19 @@ const Contact = () => {
       <div className="contact__left">
         <div>
           <p>CONTACT</p>
-          <p>contact@skylinkcreative.com</p>
+          <p>
+            <a href="mailto:contact@skylinkcreative.com">
+              contact@skylinkcreative.com
+            </a>
+          </p>
         </div>
         <div>
           <p>FOLLOW</p>
           <div>
-            <a href="">
+            <a href="https://www.facebook.com/skylinkcreative">
               <FacebookOutlinedIcon></FacebookOutlinedIcon>
             </a>
-            <a href="">
+            <a href="https://twitter.com/creativeskylink?fbclid=IwAR2X_72MzQKKZnKUjOwyWNdp9sWwduXOn4zUlAHMRLyG6vcgd12UQiQxTMc">
               <TwitterIcon></TwitterIcon>
             </a>
           </div>
