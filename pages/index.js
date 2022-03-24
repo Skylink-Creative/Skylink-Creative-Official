@@ -21,6 +21,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        {/* production build */}
       </Head>
 
       <main>
