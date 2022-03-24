@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Contact = () => {
   const [values, setValues] = useState({
@@ -15,40 +17,42 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <div className="contact_head">
-        <h2>LET'S GET TO WORK.</h2>
-        <p>Email us to discuss your project : contact@skylinkcreative.com</p>
+      <div className="contact__left">
+        <div>
+          <p>CONTACT</p>
+          <p>contact@skylinkcreative.com</p>
+        </div>
+        <div>
+          <p>FOLLOW</p>
+          <div>
+            <a href="">
+              <FacebookOutlinedIcon></FacebookOutlinedIcon>
+            </a>
+            <a href="">
+              <TwitterIcon></TwitterIcon>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div className="contact_form">
-        <div className="contact_body">
+      <div className="contact__right">
+        <div className="contact__right__top">
+          <p>HIRE US</p>
+          <p>Let’s talk!</p>
+        </div>
+        <div className="contact__right__form">
           <form
             action="https://formsubmit.co/contact@skylinkcreative.com"
             method="POST"
           >
-            <input
-              type="text"
-              className="field"
-              name="name"
-              placeholder="Your Name"
-            />
+            <div>
+              <label htmlFor="">Name & Company</label>
+              <input type="text" placeholder="John From google.." name="name" />
+            </div>
             <input
               type="hidden"
               name="_next"
               value="https://www.skylinkcreative.com/"
-            />
-
-            <input
-              type="email"
-              className="field"
-              name="email"
-              placeholder="Your Email"
-            />
-            <input
-              type="number"
-              className="field"
-              name="number"
-              placeholder="Your Phone"
+              required
             />
             <input type="hidden" name="_captcha" value="false" />
             <input
@@ -56,12 +60,26 @@ const Contact = () => {
               name="_autoresponse"
               value="Thanks For Showing Interest On Us. We will Contact to you soon"
             />
-            <textarea
-              className="field field_area"
-              placeholder="Message"
-              name="message"
-            />
-            <button className="field_btn">Send</button>
+            <div>
+              <label htmlFor="">Email</label>
+              <input
+                type="text"
+                placeholder="john@google.com"
+                name="email"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="">Project Description</label>
+              <textarea
+                name="description"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="We Need help to redesign our..."
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>

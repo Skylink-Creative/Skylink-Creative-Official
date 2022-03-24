@@ -3,12 +3,14 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  padding: 10px 0px;
   @include breakpoints-down(small) {
     position: absolute;
   }
   > div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     @include max-width;
     position: relative;
     @include breakpoints-down(medium) {
@@ -46,7 +48,7 @@
     span {
       color: $white;
       margin-left: 30px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       letter-spacing: 1px;
       display: flex;

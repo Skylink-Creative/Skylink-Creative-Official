@@ -35,6 +35,7 @@ const Footer = () => {
               <AiFillTwitterSquare size={25} />
             </a>{" "}
           </li>
+          <li>Copyright © skylink creative 2022</li>
         </ul>
       </div>
       <div className="footer_item">
@@ -59,7 +60,7 @@ const Footer = () => {
               <lord-icon
                 src="https://cdn.lordicon.com/zzcjjxew.json"
                 trigger="loop"
-                colors="primary:#ffffff,secondary:#7166ee"
+                colors="primary:#286dec,secondary:#7166ee"
                 style={{ width: "40px", height: "40px" }}
               ></lord-icon>
               Sylhet 3100, Bangladesh
@@ -75,7 +76,8 @@ const Footer = () => {
 
           <li>
             <p>
-              <AiOutlineMail size={20} /> contact@skylinkcreative.com
+              <AiOutlineMail size={20} color="#286dec" />{" "}
+              contact@skylinkcreative.com
             </p>
           </li>
         </ul>

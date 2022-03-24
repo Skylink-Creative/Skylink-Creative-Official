@@ -1,182 +1,40 @@
 .about {
-  @include max-width;
-  position: relative;
-  padding: 120px 0px 100px 0px;
-  @include breakpoints-down(medium) {
-    padding: 50px 0px;
-  }
-
-  &_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    @include breakpoints-down(small) {
-      display: block;
-      margin: 0 auto;
+  @include max-width();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 120px 0px;
+  gap: 50px;
+  &__left {
+    p {
+      &:nth-of-type(1) {
+        font-size: 18px;
+        letter-spacing: 5px;
+      }
+      &:nth-of-type(2) {
+        margin-top: 20px;
+        color: #286dec;
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 3.125rem;
+        margin-bottom: 15px;
+        max-width: 550px;
+      }
+      &:nth-of-type(3) {
+        margin: 30px 0px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 0.7;
+      }
     }
-
-    @include breakpoints-down(medium) {
-      display: block;
-      margin: 0 auto;
-    }
-
-    @include breakpoints-up(medium) {
-      display: flex;
-    }
-  }
-  h2 {
-    text-transform: uppercase;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    color: #1b2935;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2em;
-
-    margin-bottom: 50px;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.6em;
-    letter-spacing: 0.02em;
-    margin: 20px 0px;
-  }
-
-  p {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.8em;
-  }
-}
-
-.card {
-  &_face_one {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    padding: 5rem 1.875rem 5rem 2.5rem;
-    color: #fff;
-    background-color: #0096ff;
-    background-image: radial-gradient(
-      circle 280px at center,
-      #0096ff 0,
-      #0096ff 24%,
-      #0492fd 32%,
-      #2372ee 91%,
-      #286dec 100%
-    );
-
-    @include breakpoints-down(small) {
-      margin: 16px;
-      height: 90%;
-    }
-
-    @include breakpoints-down(medium) {
-      margin: 16px;
-      height: 90%;
+    button {
+      margin-top: 20px;
+      @include button-basic();
     }
   }
-
-  &_face_two {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    padding: 5rem 1.875rem 5rem 2.5rem;
-    color: #fff;
-
-    background-image: radial-gradient(
-      circle 280px at center,
-      #ff784e 0,
-      #ff784e 24%,
-      #ff764e 32%,
-      #ff664e 91%,
-      #ff644e 100%
-    );
-
-    @include breakpoints-down(small) {
-      margin: 16px;
-      height: 90%;
-    }
-
-    @include breakpoints-down(medium) {
-      margin: 16px;
-      height: 90%;
-    }
-  }
-
-  &_face_three {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    padding: 5rem 1.875rem 5rem 2.5rem;
-    color: #fff;
-    background-color: #8787fb;
-    background-image: radial-gradient(
-      circle 280px at center,
-      #8787fb 0,
-      #8787fb 23%,
-      #8484fb 32%,
-      #7272f7 91%,
-      #6f6ff7 100%
-    );
-
-    @include breakpoints-down(small) {
-      margin: 16px;
-      height: 90%;
-    }
-
-    @include breakpoints-down(medium) {
-      margin: 16px;
-      height: 90%;
-    }
-  }
-
-  &_face_four {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    padding: 5rem 1.875rem 5rem 2.5rem;
-    color: #fff;
-    background-color: #fc4e35;
-    background-image: radial-gradient(
-      circle 280px at center,
-      #fc4e35 0,
-      #fc4e35 24%,
-      #fc4b36 32%,
-      #ff313a 91%,
-      #ff2d3b 100%
-    );
-
-    @include breakpoints-down(small) {
-      margin: 16px;
-      height: 90%;
-    }
-
-    @include breakpoints-down(medium) {
-      margin: 16px;
-      height: 90%;
-    }
+  &__right {
+    text-align: center;
   }
 }

@@ -1,55 +1,55 @@
 //640px, 1024px, 1400px
 $breakpoints-up: (
-    "medium": "40em",
-    "large": "64em",
-    "x-large": "87.5em",
+  "medium": "40em",
+  "large": "64em",
+  "x-large": "87.5em",
 );
 
 //639px 1023px 1399px
 $breakpoints-down: (
-    "x-small": "25em",
-    "small": "39.9375em",
-    "medium": "64em",
-    "large": "87.4375em",
-    "special": "50.625em",
+  "x-small": "25em",
+  "small": "39.9375em",
+  "medium": "64em",
+  "large": "87.4375em",
+  "special": "50.625em",
 );
 
 @mixin breakpoints-up($size) {
-    @media (min-width: map-get($breakpoints-up, $size)) {
-        @content;
-    }
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
 }
 @mixin breakpoints-down($size) {
-    @media (max-width: map-get($breakpoints-down, $size)) {
-        @content;
-    }
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
 }
 
 //max width for large device and make content center
 
 @mixin max-width {
-    max-width: 1400px;
-    margin: 0px auto;
-    @include breakpoints-down(large) {
-        width: 90%;
-    }
+  max-width: 1400px;
+  margin: 0px auto;
+  @include breakpoints-down(large) {
+    width: 90%;
+  }
 }
 
 @mixin button-basic() {
-    background-color: #ec4d29;
-    color: $white;
-    padding: 15px 70px;
-    border: none;
-    cursor: pointer;
-    font-size: $small-font;
-    font-weight: 700;
-    // box-shadow: 0 20px 27px rgba(128, 128, 128, 0.171);
-    box-shadow: 0px 10px 13px -7px #00000067;
-    border-radius: 50px;
-    outline: none;
-    &:hover {
-        opacity: 0.8;
-    }
+  background-color: #286dec;
+  color: $white;
+  padding: 15px 70px;
+  border: none;
+  cursor: pointer;
+  font-size: $small-font;
+  font-weight: 700;
+  // box-shadow: 0 20px 27px rgba(128, 128, 128, 0.171);
+  box-shadow: 0px 10px 13px -7px #00000067;
+  border-radius: 50px;
+  outline: none;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 // //for fixed overlay background
 

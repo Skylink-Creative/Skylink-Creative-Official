@@ -3,7 +3,7 @@
   // min-height: 100vh;
   // max-height: 100%;
   position: relative;
-  box-shadow: 0 12px 21px #7889b6;
+  // box-shadow: 0 12px 21px #7889b6;
   #tsparticles {
     position: absolute;
     top: 0%;
@@ -11,7 +11,7 @@
     bottom: 0%;
     right: 0%;
     width: 100%;
-    background: linear-gradient(45deg, #286dec, #244dd2);
+    background: linear-gradient(to bottom, #0051f9, #286dec);
     // background-image: radial-gradient(
     //   circle 920px at center,
     //   #286dec 0,
@@ -20,7 +20,7 @@
     //   #244dd2 66%,
     //   #244dd2 91%
     // );
-    box-shadow: 0 12px 21px #7889b6;
+
     z-index: -999;
   }
   &__content {

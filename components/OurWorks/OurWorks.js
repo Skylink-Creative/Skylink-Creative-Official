@@ -9,7 +9,7 @@ const OurWorks = () => {
       <div>
         <div>
           <p>Featured Projects</p>
-          <p></p>
+          <p>Our works</p>
         </div>
         <div>
           <a href="https://mozumdertushar.github.io/easybank-landing-page/index.html">

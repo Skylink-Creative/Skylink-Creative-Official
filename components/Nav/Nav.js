@@ -49,39 +49,9 @@ const Nav = () => {
         {/* nav menu for desktop */}
         <div className="nav__right " ref={navLinkRef}>
           <Link href="/">Home</Link>
-          <span>
-            <p>
-              Services <ExpandMoreIcon></ExpandMoreIcon>
-            </p>
-            <ul>
-              <li>
-                <Link href="/services/web-development/">
-                  Custom Web Development
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/wordpress/">WordPress Website</Link>
-              </li>
-              <li>
-                <Link href="/services/ui-ux/">UI/UX Design</Link>
-              </li>
-              <li>
-                <Link href="/services/affiliate-marketing/">
-                  Affiliate Website
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/seo/">
-                  Search Engine Optimization (SEO)
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/content/">Content Writing</Link>
-              </li>
-            </ul>
-          </span>
-          <a href="/#works">Our Works</a>
+          <a href="/#services">Services</a>
           <a href="/#about">About</a>
+          <a href="/#works">Works</a>
           <a href="/#contact">Contact</a>
         </div>
         {/* mobile hamburger menu */}

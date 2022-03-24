@@ -1,123 +1,47 @@
 .services {
-  @include max-width;
+  background-color: #f9fbfe;
   padding: 150px 0px;
-  position: relative;
-  h2 {
-    //for mobile
-    // font-size: calc(1.31vw + 30.08841px);
-    text-transform: uppercase;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    color: #1b2935;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2em;
+  > div {
+    @include max-width;
   }
-  &__left {
-    &__card {
-      max-width: 500px;
-      position: relative;
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-      box-shadow: 0 12px 21px #7889b6;
-      color: black;
-      font-weight: 700;
-      font-size: 20px;
-      text-align: center;
-      text-transform: uppercase;
-      margin: 50px 0px;
-      padding: 20px 0px;
-      border-left: 5px solid #b95ce4;
-      letter-spacing: 0.02em;
-      &.active {
-        cursor: pointer;
-        margin-left: 15px !important;
-        background-color: #325add;
-        color: white;
-        z-index: -1;
-
-        background: linear-gradient(45deg, #b95ce4, #4f29c2);
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 0%;
-        height: 100%;
-        background-color: #3250d3;
-        z-index: -1;
-        background: linear-gradient(45deg, #b95ce4, #4f29c2);
-        transition: width 0.2s ease-in-out;
-      }
-      &:hover {
-        color: white;
-      }
-      &:hover::after {
-        width: 100%;
-      }
-      // &.active,
-      // &:hover {
-      //     color: #fff;
-      //     background-color: #3250d3;
-      //     background-image: radial-gradient(
-      //         circle 212px at center,
-      //         #0d90f7 0,
-      //         #0d90f7 24%,
-      //         #118af4 32%,
-      //         #2e60e0 91%,
-      //         #325add 100%
-      //     );
-
-      //     margin-left: 1.875rem;
-      // }
-    }
-  }
-
-  .box__shape__anim {
-    position: absolute;
-    bottom: 0%;
-    right: 0px;
-  }
-  &__right {
-    a {
-      @include button-basic();
-      margin-top: 30px;
-    }
-    &__lang {
-      margin: 30px 0px;
-      > span {
-        color: #1b2935;
+  &__top {
+    text-align: center;
+    p {
+      &:nth-of-type(1) {
         font-size: 18px;
-        font-weight: 300;
+        letter-spacing: 5px;
       }
-      > span:not(:last-child) {
-        &::after {
-          content: " - ";
-        }
-      }
-    }
-    &__catg {
-      padding: 10px 0px;
-      > p {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        margin: 20px 0px;
-        transition: transform 0.6s ease;
-        font-weight: 500;
-        &:hover {
-          transform: translateX(30px);
-        }
+      &:nth-of-type(2) {
+        letter-spacing: 2px;
+        font-size: 60px;
+        font-weight: 900;
+        color: #286dec;
+        margin-bottom: 50px;
       }
     }
   }
-}
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include breakpoints-down(medium) {
+      grid-template-columns: 1fr;
+    }
+    gap: 5vw;
+    > div {
+      text-align: center;
 
-.services__for__big__screen {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  @include breakpoints-down(medium) {
-    grid-template-columns: 1fr;
+      h4 {
+        font-size: 20px;
+        height: 50px;
+      }
+      p {
+        color: black;
+        line-height: 190%;
+      }
+      .MuiSvgIcon-root {
+        font-size: 50px;
+        color: $button-color;
+      }
+    }
   }
 }
