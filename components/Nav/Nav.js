@@ -24,6 +24,11 @@ const Nav = () => {
     navLinkRef.current.classList.toggle("hamburger__menu__active");
   };
 
+  const handleCloseMenu = () => {
+    hamburgerRef.current.classList.remove("animate");
+    navLinkRef.current.classList.remove("hamburger__menu__active");
+  };
+
   return (
     <nav className={top ? "nav" : "nav white__bg"}>
       <div>
@@ -48,11 +53,21 @@ const Nav = () => {
         </div>
         {/* nav menu for desktop */}
         <div className="nav__right " ref={navLinkRef}>
-          <Link href="/">Home</Link>
-          <a href="/#services">Services</a>
-          <a href="/#about">About</a>
-          <a href="/#works">Works</a>
-          <a href="/#contact">Contact</a>
+          <Link href="/#" onClick={handleCloseMenu}>
+            Home
+          </Link>
+          <a href="/#services" onClick={handleCloseMenu}>
+            Services
+          </a>
+          <a href="/#about" onClick={handleCloseMenu}>
+            About
+          </a>
+          <a href="/#works" onClick={handleCloseMenu}>
+            Works
+          </a>
+          <a href="/#contact" onClick={handleCloseMenu}>
+            Contact
+          </a>
         </div>
         {/* mobile hamburger menu */}
         <div className="menu-wrapper" onClick={handleBurger}>
