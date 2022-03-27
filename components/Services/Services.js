@@ -27,39 +27,34 @@ const Services = () => {
             <WebIcon></WebIcon>
             <h4>Website Development</h4>
             <p>
-              From link building and keyword research, to page optimization and
-              technical SEO, to competitor analysis and more, we're experts at
-              providing search engine optimization customized to your business
-              goals.
+              Develop responsive E-commerce/Local business website that will be
+              the perfect balance of function and design.
             </p>
           </div>
           <div>
             <WebAssetIcon></WebAssetIcon>
             <h4>Website Design</h4>
             <p>
-              Every business is different, so we listen to your marketing goals
-              to drive the strategy behind your custom SEO campaign. Then, we
-              directly measure our success based on those goals.
+              EUser-friendly website interface that will boost your brand
+              reputation and tell your story with memorable visuals.
             </p>
           </div>
           <div>
             <AssessmentIcon></AssessmentIcon>
-            <h4>Seo</h4>
+            <h4>Search Engine Optimization</h4>
             <p>
-              Increased traffic to your website is meaningless if the users
-              visiting your site are not engaging with your site in a meaningful
-              way. We help you track the SEO ROI that maps directly to your
-              business.
+              Get your site on the top of Google search engine results page with
+              White Hat SEO done by our specialist with proven track record and
+              experience.
             </p>
           </div>
           <div>
             <CreateIcon></CreateIcon>
-            <h4>Content Writing</h4>
+            <h4>Content Creation</h4>
             <p>
-              Increased traffic to your website is meaningless if the users
-              visiting your site are not engaging with your site in a meaningful
-              way. We help you track the SEO ROI that maps directly to your
-              business.
+              Assist you in publishing pieces for all the different platforms
+              and formats. Providing a narrative that the audience will want to
+              read.
             </p>
           </div>
           <div>

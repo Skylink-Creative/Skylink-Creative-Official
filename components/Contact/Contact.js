@@ -58,7 +58,7 @@ const Contact = () => {
               value="https://www.skylinkcreative.com/"
               required
             />
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_captcha" value="true" />
             <input
               type="hidden"
               name="_autoresponse"

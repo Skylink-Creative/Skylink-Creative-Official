@@ -38,8 +38,23 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
         font-size: 26px;
-        @include breakpoints-down(medium) {
-          font-size: 30px;
+
+        @include breakpoints-down(large) {
+          font-size: 18px;
+        }
+        @include breakpoints-down(small) {
+          font-size: 14px;
+        }
+        > span {
+          font-size: 150px;
+
+          @include breakpoints-down(large) {
+            font-size: 100px;
+            margin: 20px 0px;
+          }
+          @include breakpoints-down(small) {
+            font-size: 15vw;
+          }
         }
         text-transform: uppercase;
         color: $white;
@@ -141,7 +156,6 @@
     -webkit-text-fill-color: transparent;
     animation: textClip 3s linear infinite;
     display: inline-block;
-    font-size: 190px;
   }
 
   @keyframes textClip {

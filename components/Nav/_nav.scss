@@ -217,7 +217,7 @@
 .white__bg {
   @include breakpoints-up(large) {
     background-color: $white !important;
-    box-shadow: 0 12px 21px #7889b6;
+    box-shadow: 0 5px 10px #7889b6;
     transition: all 1s;
     .nav__right {
       > a:not(:last-child),

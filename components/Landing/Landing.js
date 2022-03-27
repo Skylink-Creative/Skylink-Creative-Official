@@ -53,19 +53,9 @@ const Landing = () => {
         <div>
           <h2>
             Grow your business with{" "}
-            <span
-              className="animate-charcter"
-              style={{
-                color: "#fff",
-                padding: "10px",
-                fontWeight: "300",
-                fontSize: "148px",
-              }}
-            >
-              SKYLINK CREATIVE
-            </span>{" "}
+            <span className="animate-charcter">SKYLINK CREATIVE</span>{" "}
           </h2>
-          <p style={{ marginLeft: "12px" }}>
+          <p>
             It's time to take your business global. Marketing is not one size
             fits all and the world of digital marketing has evolved drastically
             in recent years, but it seems like every small-to-medium sized
